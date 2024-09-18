@@ -1,4 +1,4 @@
-package tests.api.generatoruser;
+package tests.api.utils.dto.generatoruser;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ public class UserRoot{
 	private String password;
 
 	@JsonProperty("address")
-	private Address address;
+	private AddressUser addressUser;
 
 	@JsonProperty("phone")
 	private String phone;
@@ -25,7 +25,7 @@ public class UserRoot{
 	private int v;
 
 	@JsonProperty("name")
-	private Name name;
+	private NameUser nameUser;
 
 	@JsonProperty("id")
 	private Integer id;

@@ -1,4 +1,4 @@
-package tests.api.generatoruser;
+package tests.api.utils.dto.generatoruser;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

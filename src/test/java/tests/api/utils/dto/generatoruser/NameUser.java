@@ -1,4 +1,4 @@
-package tests.api.generatorcart;
+package tests.api.utils.dto.generatoruser;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CartInfoGenerator {
+public class NameUser {
 
-	@JsonProperty("quantity")
-	private int quantity;
+	@JsonProperty("firstname")
+	private String firstname;
 
-	@JsonProperty("productId")
-	private int productId;
+	@JsonProperty("lastname")
+	private String lastname;
 }

@@ -1,4 +1,4 @@
-package tests.api.generatorproducts;
+package tests.api.utils.dto.generatorcart;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Rating{
+public class CartInfo {
 
-	@JsonProperty("rate")
-	private Double rate;
+	@JsonProperty("quantity")
+	private int quantity;
 
-	@JsonProperty("count")
-	private Integer count;
+	@JsonProperty("productId")
+	private int productId;
 }

@@ -1,4 +1,4 @@
-package tests.api.generatorproducts;
+package tests.api.utils.dto.generatorproducts;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -19,7 +19,7 @@ public class ProductRoot{
 	private Double price;
 
 	@JsonProperty("rating")
-	private Rating rating;
+	private RatingProduct ratingProduct;
 
 	@JsonProperty("description")
 	private String description;

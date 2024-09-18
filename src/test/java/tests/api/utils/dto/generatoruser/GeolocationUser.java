@@ -1,4 +1,4 @@
-package tests.api.generatoruser;
+package tests.api.utils.dto.generatoruser;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Geolocation{
+public class GeolocationUser {
 
 	@JsonProperty("lat")
 	private String lat;
