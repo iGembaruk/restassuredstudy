@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "8.10"
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    lombokVersion = '1.18.30'
+    junitVersion = '5.10.0'
+    restAssuredVersion = '5.5.0'
+    jacksonVersion = '2.17.0'
+}
+
+dependencies {
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: "$lombokVersion"
+
+    testImplementation platform("org.junit:junit-bom:$junitVersion")
+    testImplementation "org.junit.jupiter:junit-jupiter:$junitVersion"
+    testImplementation "io.rest-assured:rest-assured:$restAssuredVersion"
+    testImplementation "com.fasterxml.jackson.core:jackson-databind:$jacksonVersion"
+}
+
+
+test {
+    useJUnitPlatform()
+}
