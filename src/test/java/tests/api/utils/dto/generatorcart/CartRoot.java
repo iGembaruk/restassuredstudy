@@ -3,22 +3,19 @@ package tests.api.utils.dto.generatorcart;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
-@NoArgsConstructor
 @AllArgsConstructor
+@Setter
+@Getter
 @Builder
 public class CartRoot {
 
-    @JsonProperty("date")
+    @JsonProperty()
     private String date;
 
     @JsonProperty("__v")
-    private int V;
+    private int v;
 
     @JsonProperty("id")
     private int id;
